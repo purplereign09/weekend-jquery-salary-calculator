@@ -1,0 +1,21 @@
+Application Needs
+    [ ]Input form that collects the following information:
+        [ ]Employee first name
+        [ ]Employee last name
+        [ ]Employee ID number
+        [ ]Employee job title
+        [ ]Employee annual salary
+    [ ]Submit Button to collect information
+
+    { } Collect and store form information
+        [ ]Calculate monthly costs from form information
+    
+    [ ]Append information to the DOM/add a new table
+    [ ]Clear the input fields
+
+    [ ]Make a function totalCosts
+        [ ]If cost > $20,000 
+            [ ]Add a red background to TOTAL MONTLY cost
+
+    [ ]Create a delete button
+        [ ]'empty' employee values (NOT SALARY VALUES )
