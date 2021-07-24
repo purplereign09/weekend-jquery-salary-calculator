@@ -1,0 +1,84 @@
+* {
+  margin: auto 0;
+}
+
+body {
+  background-color: #e6e6ff;
+}
+
+header {
+  background-color: darkmagenta;
+}
+
+.salarycalculator h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  margin: auto 0;
+  padding: 20px;
+  color: white;
+}
+
+#addEmployee h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 120px;
+  padding-left: 100px;
+}
+
+form#submitEmployee {
+  margin-left: 120px;
+  padding-left: 100px;
+  margin-top: 60px;
+}
+
+input#fname {
+  padding: 10px;
+  margin-right: 25px;
+}
+
+input#lname {
+  padding: 10px;
+  margin-right: 25px;
+}
+
+input#idNumber {
+  padding: 10px;
+  margin-right: 25px;
+}
+
+input#annualSalary {
+  padding: 10px;
+}
+
+input#submitButton {
+  background-color: white;
+  border: solid;
+  color: grey;
+  padding: 10px 24px;
+  text-align: center;
+  border-radius: 6px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-left: 120px;
+  padding-left: 100px;
+  padding-top: 40px;
+}
+
+p {
+  text-align: right;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  margin-right: 200px;
+  margin-top: 80px;
+  padding-right: 200px;
+}

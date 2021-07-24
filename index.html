@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="jQuery.js"></script>
     <script src="script.js"></script>
@@ -11,22 +14,93 @@
 </head>
 <body>
     <header>
-        <h1>Salary Calculator</h1>
+        <div class="salarycalculator">
+            <h1>Salary Calculator</h1>
+        </div>
     </header>
+
     <div id="addEmployee">
         <h3>Add Employee</h3>
     </div>
 
-    <section id="submitEmployee">
-        <label for="fname"></label>
-        <input type="text" id="fname" name="fname" placeholder="Jane">
-        <label for="lname"></label>
-        <input type="text" id="lname" name="lname" placeholder="Doe">
-        <label for="lname"></label>
-        <input type="number" id="idNumber" name="idNumber" placeholder="ID">
-        <label for="annualSalary"></label>
-        <input type="number" id="annualSalary" name="annualSalary" placeholder="Annual Salary"><br><br>
-        <input type="submit" value="Submit">
-    </section>
+    <form id="submitEmployee">
+        <input 
+        type="text" 
+        id="fname" 
+        name="fname" 
+        placeholder="Jane"
+        >
+        
+        <input 
+        type="text" 
+        id="lname" 
+        name="lname" 
+        placeholder="Doe"
+        >
+        
+        <input 
+        type="number" 
+        id="idNumber" 
+        name="idNumber" 
+        placeholder="ID"
+        >
+        
+        <input 
+        type="number" 
+        id="annualSalary" 
+        name="annualSalary" 
+        placeholder="Annual Salary"><br><br>
+        
+        <input 
+        type="submit" 
+        id="submitButton" 
+        value="Submit"
+        >
+    </form>
+
+    
+        <h4>Employees</h4>
+    
+
+    <table id="employeeInformation">
+        <tr>
+            <th class="fname"></th>
+            <th class="lname"></th>
+            <th class="employeeID"></th>
+            <th class="emTitle"></th>
+            <th class="emSalary"></th>
+            <th class="deleteBtn"></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    <p>Total Monthly:</p>
+
 </body>
 </html>
