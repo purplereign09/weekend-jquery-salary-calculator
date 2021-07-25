@@ -71,10 +71,76 @@ h4 {
   font-family: "Oswald", sans-serif;
   font-size: 32px;
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 120px;
   padding-left: 100px;
   padding-top: 40px;
+}
+
+#employeeInformation {
+    width: 70%;
+  text-align: left;
+  margin-left: 120px;
+  padding-left: 100px;
+  padding: 100px;
+  font-family: "Oswald", sans-serif;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+thead {
+  margin-left: 60px;
+  padding-left: 40px;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+}
+
+thead,
+tr,
+td {
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+
+th.fname {
+  width: 15%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+th.lname {
+  width: 15%;
+  margin-right: 25px;
+  padding-right: 50px;
+}
+
+th.employeeID {
+  width: 15%;
+  margin-right: 40px;
+  padding-right: 70px;
+  padding-left: 20px;
+}
+
+th.emTitle {
+  width: 15%;
+  margin-right: 60px;
+  padding-right: 80px;
+  padding-left: 25px;
+}
+
+th.emSalary {
+  width: 15%;
+  margin-right: 60px;
+  padding-right: 80px;
+  padding-left: 10px;
+}
+
+#blankRow td {
+  background-color: #d9d9d9
+  height: 30px;
+  width: 15%;
 }
 
 p {

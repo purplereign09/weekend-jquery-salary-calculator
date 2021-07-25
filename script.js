@@ -29,4 +29,16 @@ console.log('employee', employee);
     $('#idNumber').val('')
     $('#employeeTitle').val('')
     $('#annualSalary').val('')
+
+    
+    $('#employeeInformation').append(`
+        <tr>
+                <td>${employee.firstName}</td>
+                <td>${employee.lastName}</td>
+                <td>${employee.ID}</td>
+                <td>${employee.title}</td>
+                <td>$${employee.annualSalary}</td>
+            </tr>
+    `);
+
 }
