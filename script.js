@@ -6,8 +6,21 @@ $(document).ready(onReady);
 function onReady(){
 
 
-$('#submitEmployee').on('submit', onSubmit);
+    $('#submitEmployee').on('submit', onSubmit);
+    $(document).on('click', '.deleteBtn', deleteData); 
 }
+//Delete button
+
+
+function deleteData(){
+    $(this).closest('tr').remove();
+    
+    console.log('delete data');
+};
+
+// function deleteData(){
+
+// }
 
 function onSubmit(event){
     //prevents the page from re-loading
@@ -22,9 +35,9 @@ function onSubmit(event){
         title: $('#employeeTitle').val(),
         annualSalary: Number($('#annualSalary').val()),
     };
-//pushes employee properties to global variable
-employees.push(employee);
-console.log('employees', employees);
+//pushes employee properties to global variable so that the global variable stores our information
+    employees.push(employee);
+    console.log('employees', employees);
 
     //Clear form input
     $('#fname').val('')
@@ -33,22 +46,40 @@ console.log('employees', employees);
     $('#employeeTitle').val('')
     $('#annualSalary').val('')
 
-    //Displaying the table on the DOM
-    $('#employeeInformation').append(`
-        <tr>
-                <td>${employee.firstName}</td>
-                <td>${employee.lastName}</td>
-                <td>${employee.ID}</td>
-                <td>${employee.title}</td>
-                <td>$${employee.annualSalary.toFixed(2)}</td>
-            </tr>
-    `);
+    // // Displaying the table on the DOM
+    // $('#employeeInformation').append(`
+    //     <tr>
+    //             <td>${employee.firstName}</td>
+    //             <td>${employee.lastName}</td>
+    //             <td>${employee.ID}</td>
+    //             <td>${employee.title}</td>
+    //             <td>$${employee.annualSalary.toFixed(2)}</td>
+    //         </tr>
+    // `);
 
+    //Empty the table and start clean
+    $('#employeeInformation').empty();
+    for (let employee of employees) {
+        $('#employeeInformation').append(`
+        <tr class="employeeRow">
+            <td>${employee.firstName}</td>
+            <td>${employee.lastName}</td>
+            <td>${employee.ID}</td>
+            <td>${employee.title}</td>
+            <td>$${employee.annualSalary.toFixed(2)}</td>
+            <td><button class="deleteBtn">Delete</button></td>
+        </tr>
+        
+    `);
+    }
 
     //calculating the total monthly
     let updatedCosts = 0;
     for(let employee of employees){
         updatedCosts += employee.annualSalary;
+        if (updatedCosts > 20000){
+            $('.totalMonthly').css('background-color', 'red');
+        }
     }
 
     //setting total monthly of updated costs

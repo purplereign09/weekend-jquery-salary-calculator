@@ -10,15 +10,15 @@ Application Needs
 
     [X]Make and style table
 
-    { } Collect and store form information
+    {X } Collect and store form information
         [ ]Calculate monthly costs from form information
     
     [X]Append information to the DOM/add a new table
-    [ ]Clear the input fields
+    [ X]Clear the input fields
 
     [ ]Make a function totalCosts
-        [ ]If cost > $20,000 
-            [ ]Add a red background to TOTAL MONTLY cost
+        [ X]If cost > $20,000 
+            [X ]Add a red background to TOTAL MONTLY cost
 
     [ ]Create a delete button
         [ ]'empty' employee values (NOT SALARY VALUES )
