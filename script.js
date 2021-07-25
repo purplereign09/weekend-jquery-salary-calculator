@@ -23,4 +23,10 @@ function onSubmit(event){
 
 console.log('employee', employee);
 
+    //Clear form input
+    $('#fname').val('')
+    $('#lname').val('')
+    $('#idNumber').val('')
+    $('#employeeTitle').val('')
+    $('#annualSalary').val('')
 }
