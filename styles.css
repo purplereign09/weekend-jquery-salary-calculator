@@ -49,14 +49,17 @@ input#idNumber {
   margin-right: 25px;
 }
 
+input#employeeTitle {
+  padding: 10px;
+  margin-right: 25px;
+}
+
 input#annualSalary {
   padding: 10px;
 }
 
-input#submitButton {
+#submitButton {
   background-color: white;
-  border: solid;
-  color: grey;
   padding: 10px 24px;
   text-align: center;
   border-radius: 6px;
