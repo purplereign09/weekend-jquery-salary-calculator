@@ -24,7 +24,7 @@ function onSubmit(event){
     };
 //pushes employee properties to global variable
 employees.push(employee);
-console.log('employee', employees);
+console.log('employees', employees);
 
     //Clear form input
     $('#fname').val('')
@@ -43,6 +43,15 @@ console.log('employee', employees);
                 <td>$${employee.annualSalary.toFixed(2)}</td>
             </tr>
     `);
-    $('#updatedCosts').text(employee.annualSalary.toFixed(2))
+
+
+    //calculating the total monthly
+    let updatedCosts = 0;
+    for(let employee of employees){
+        updatedCosts += employee.annualSalary;
+    }
+
+    //setting total monthly of updated costs
+    $('#updatedCosts').text(updatedCosts.toFixed(2))
 
 }
