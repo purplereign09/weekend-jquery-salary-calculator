@@ -13,7 +13,7 @@ Application Needs
     { } Collect and store form information
         [ ]Calculate monthly costs from form information
     
-    [ ]Append information to the DOM/add a new table
+    [X]Append information to the DOM/add a new table
     [ ]Clear the input fields
 
     [ ]Make a function totalCosts

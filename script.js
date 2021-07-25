@@ -1,4 +1,6 @@
 console.log("on ready");
+//remember employee info in global variable
+let employees = [];
 $(document).ready(onReady);
 
 function onReady(){
@@ -20,8 +22,9 @@ function onSubmit(event){
         title: $('#employeeTitle').val(),
         annualSalary: Number($('#annualSalary').val()),
     };
-
-console.log('employee', employee);
+//pushes employee properties to global variable
+employees.push(employee);
+console.log('employee', employees);
 
     //Clear form input
     $('#fname').val('')
@@ -30,15 +33,16 @@ console.log('employee', employee);
     $('#employeeTitle').val('')
     $('#annualSalary').val('')
 
-    
+    //Displaying the table on the DOM
     $('#employeeInformation').append(`
         <tr>
                 <td>${employee.firstName}</td>
                 <td>${employee.lastName}</td>
                 <td>${employee.ID}</td>
                 <td>${employee.title}</td>
-                <td>$${employee.annualSalary}</td>
+                <td>$${employee.annualSalary.toFixed(2)}</td>
             </tr>
     `);
+    $('#updatedCosts').text(employee.annualSalary.toFixed(2))
 
 }

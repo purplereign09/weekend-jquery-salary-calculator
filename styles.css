@@ -78,7 +78,7 @@ h4 {
 }
 
 #employeeInformation {
-    width: 70%;
+  width: 70%;
   text-align: left;
   margin-left: 120px;
   padding-left: 100px;
@@ -137,13 +137,7 @@ th.emSalary {
   padding-left: 10px;
 }
 
-#blankRow td {
-  background-color: #d9d9d9
-  height: 30px;
-  width: 15%;
-}
-
-p {
+.totalMonthly p {
   text-align: right;
   font-family: "Oswald", sans-serif;
   font-size: 32px;
